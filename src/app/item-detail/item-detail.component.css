@@ -1,0 +1,81 @@
+.container {
+  margin: 2rem;
+}
+
+.phone-view-img {
+  margin: 2rem;
+  padding-bottom: 2rem;
+}
+
+.phone-item-big-image {
+  flex-basis: 0px;
+  flex-grow: 1;
+  order: 1;
+}
+
+.phone-item-info {
+  flex-basis: 0px;
+  flex-grow: 2;
+  order: 2;
+}
+
+.show-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.phone-item-info-small-img {
+  max-width: 100px;
+  flex-basis: 0px;
+  flex-grow: 1;
+  order: 2;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-top: solid rgba(0, 0, 0, 0.191) 1px;
+  padding-top: 1.8rem;
+}
+
+.info > * {
+  flex-basis: 0px;
+  flex-grow: 1;
+  order: 2;
+}
+
+.phone {
+  flex-basis: 0px;
+  flex-grow: 1;
+  order: 2;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1rem;
+}

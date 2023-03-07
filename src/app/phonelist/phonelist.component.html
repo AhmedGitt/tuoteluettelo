@@ -1,0 +1,31 @@
+<main id="container">
+    
+    <aside id="search-nav">
+      <label for="searchbar">Search:</label><br />
+      <input type="search" id="searchbar" name="searchbar" [(ngModel)]="filterTerm"/>
+      <br><br>
+      <section class="sort">
+          <label class="label">Sort by:</label><br>
+          <select id="selectid" (change)="sort($event)">
+            <option value="oldest">Oldest first</option>
+            <option value="newest">Newest first</option>
+            <option value="alpha-a">Alphabetical A-Z</option>
+            <option value="alpha-z">Alphabetical Z-A</option>
+          </select>
+        </section>
+    </aside>
+  
+    <section id="phonecard">
+      <article id="phoneblocks" *ngFor="let phone of phoneList | filter: filterTerm">
+        <figure class="phoneimg">
+          <img
+            src="{{ 'assets/' + phone.imageUrl }}"
+            alt="{{ phone.id }}"
+          /> </figure>
+        <div class="phoneinfo">
+          <h3><a routerLink="{{ '/item-detail/' + phone.id }}">{{ phone.name }}</a></h3>
+          <p>{{ phone.snippet }}</p>
+        </div>
+      </article>
+    </section>
+  </main>

@@ -1,0 +1,47 @@
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+#search-nav {
+  flex-grow: 1.5;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+#phonecard {
+  flex-grow: 6;
+  padding: 1rem;
+}
+
+#phoneblocks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: rgba(0, 0, 0, 0.5) solid 1px;
+}
+
+.phoneimg {
+  max-width: auto;
+  margin: 1rem;
+}
+
+img {
+  display: block;
+  margin: 1rem;
+  max-width: 100px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(57, 147, 202);
+}
+
+a:hover {
+  color: rgb(28, 76, 105);
+}
